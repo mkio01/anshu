@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaGrowth | Powerful Meta Ads for Your Business</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #050505;
+            color: white;
+        }
+        
+        .heading-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        
+        .hero-bg {
+            background: radial-gradient(circle at 30% 20%, #4f46e5 0%, #7e22ce 40%, #0a0a0a 80%);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #a855f7, #22d3ee, #ec4899, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 300%;
+            animation: neonFlow 5s linear infinite;
+        }
+        
+        @keyframes neonFlow {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 300% 50%; }
+        }
+        
+        .glass {
+            background: rgba(15, 15, 30, 0.75);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(168, 85, 247, 0.4);
+        }
+        
+        .card-hover {
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-18px) scale(1.04);
+            box-shadow: 0 0 70px -15px #22d3ee;
+            border-color: #22d3ee;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background: linear-gradient(90deg, #22d3ee, #ec4899);
+            transition: width 0.4s ease;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        
+        .neon-button {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .neon-button::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 40%;
+            height: 300%;
+            background: linear-gradient(transparent, rgba(255,255,255,0.3), transparent);
+            transform: rotate(30deg);
+            transition: all 0.7s;
+        }
+        
+        .neon-button:hover::after {
+            left: 120%;
+        }
+        
+        .stat-number {
+            font-variant-numeric: tabular-nums;
+            text-shadow: 0 0 25px currentColor;
+        }
+        
+        .whatsapp-float {
+            animation: pulse 2s infinite;
+            box-shadow: 0 0 40px #25D366;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.12); }
+        }
+    </style>
+</head>
+<body class="section-scroll overflow-x-hidden">
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass border-b border-violet-500/30">
+        <div class="max-w-screen-2xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 bg-gradient-to-br from-violet-500 via-cyan-400 to-pink-500 rounded-2xl flex items-center justify-center text-2xl font-black heading-font shadow-[0_0_30px_#a855f7]">MG</div>
+                <span class="text-3xl font-bold tracking-tighter heading-font gradient-text">MetaGrowth</span>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-10 text-sm font-medium">
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#plans" class="nav-link">Plans</a>
+                <a href="#why-us" class="nav-link">Why Us</a>
+                <a href="#results" class="nav-link">Results</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="flex items-center gap-4">
+                <a href="https://wa.me/919876543210" target="_blank"
+                   class="flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 px-6 py-3 rounded-2xl font-semibold text-sm transition-all neon-button">
+                    <i class="fab fa-whatsapp text-xl"></i>
+                    <span>WhatsApp</span>
+                </a>
+                <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})"
+                        class="neon-button bg-white text-black px-8 py-3 rounded-2xl font-semibold hover:scale-105 transition-all">
+                    Get Started
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero-bg min-h-screen flex items-center pt-20 relative">
+        <div class="max-w-screen-2xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8">
+                <div class="inline-flex items-center gap-3 glass px-6 py-2.5 rounded-3xl text-sm font-medium border border-cyan-400/50">
+                    <div class="w-3 h-3 bg-emerald-400 rounded-full animate-pulse"></div>
+                    #1 Meta Ads Agency in India
+                </div>
+                
+                <h1 class="text-7xl md:text-8xl leading-none font-bold tracking-tighter heading-font">
+                    Grow Your Business with<br>
+                    <span class="gradient-text">Powerful Meta Ads</span>
+                </h1>
+                
+                <p class="text-2xl text-gray-300 max-w-lg">
+                    We run high-converting Facebook & Instagram ads that generate leads, sales, and explosive brand awareness.
+                </p>
+                
+                <div class="flex flex-wrap gap-6">
+                    <button onclick="document.getElementById('plans').scrollIntoView({behavior:'smooth'})"
+                            class="neon-button bg-gradient-to-r from-violet-600 to-cyan-500 text-white px-10 py-5 rounded-3xl font-semibold text-lg hover:scale-105 transition-all shadow-2xl shadow-cyan-500/50">
+                        View Monthly Plans
+                    </button>
+                    
+                    <a href="https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20grow%20my%20business%20with%20Meta%20Ads!" target="_blank"
+                       class="flex items-center gap-4 group">
+                        <div class="w-16 h-16 bg-emerald-500 rounded-3xl flex items-center justify-center text-4xl group-hover:rotate-12 transition-transform shadow-[0_0_30px_#25D366]">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <div class="text-sm text-gray-400">Chat instantly</div>
+                            <div class="font-semibold text-xl gradient-text">Contact on WhatsApp</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="flex items-center gap-8 text-sm pt-8 border-t border-white/10">
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-check-circle text-emerald-400"></i>
+                        <span>Results in 30 days</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-check-circle text-emerald-400"></i>
+                        <span>No long contracts</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hero Visual -->
+            <div class="relative hidden md:block">
+                <div class="absolute -inset-10 bg-gradient-to-br from-cyan-400/30 to-pink-500/30 rounded-[4rem] -rotate-12 blur-xl"></div>
+                <div class="relative glass rounded-3xl overflow-hidden shadow-2xl border border-cyan-400/30">
+                    <img src="https://picsum.photos/id/1015/800/620" alt="Meta Ads Dashboard" class="w-full rounded-t-3xl">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent h-48"></div>
+                    <div class="absolute bottom-8 left-8 glass px-6 py-4 rounded-2xl border border-cyan-400/30">
+                        <div class="text-emerald-400 text-xs font-mono mb-1">+₹8.4L THIS MONTH</div>
+                        <div class="text-4xl font-bold heading-font text-white">₹42.7 Lakh</div>
+                        <div class="text-sm text-gray-400">Revenue generated for clients</div>
+                    </div>
+                </div>
+                
+                <!-- Floating badges -->
+                <div class="absolute -top-6 -right-6 glass px-6 py-3 rounded-3xl border border-cyan-400/30 shadow-[0_0_40px_#22d3ee]">
+                    <div class="flex items-center gap-3">
+                        <div class="text-3xl">📈</div>
+                        <div>
+                            <div class="font-semibold">4.8x ROI Average</div>
+                            <div class="text-xs text-emerald-400">Last 90 days</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-10 left-1/2 flex flex-col items-center gap-2 text-xs tracking-widest">
+            <div class="w-px h-12 bg-gradient-to-b from-transparent via-cyan-400 to-transparent"></div>
+            SCROLL
+        </div>
+    </header>
+
+    <!-- TRUST BAR -->
+    <div class="bg-black py-8 border-b border-violet-500/30">
+        <div class="max-w-screen-2xl mx-auto px-6 flex flex-wrap justify-center md:justify-between items-center gap-12 opacity-70">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Meta_Platforms_Inc._logo_%28blue%29.svg/2560px-Meta_Platforms_Inc._logo_%28blue%29.svg.png" alt="Meta" class="h-6">
+            <div class="text-2xl font-light tracking-widest text-cyan-300">FACEBOOK</div>
+            <div class="text-2xl font-light tracking-widest text-pink-300">INSTAGRAM</div>
+            <div class="flex items-center gap-2">
+                <i class="fas fa-star text-amber-400"></i>
+                <i class="fas fa-star text-amber-400"></i>
+                <i class="fas fa-star text-amber-400"></i>
+                <i class="fas fa-star text-amber-400"></i>
+                <i class="fas fa-star text-amber-400"></i>
+                <span class="ml-3 text-sm text-gray-300">4.98 (287 reviews)</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT OUR SERVICE -->
+    <section id="services" class="py-28 bg-[#0a0a0a]">
+        <div class="max-w-screen-2xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-16">
+                <div class="md:col-span-5">
+                    <div class="sticky top-28">
+                        <span class="px-5 py-2 bg-violet-500/10 text-cyan-400 text-xs font-semibold rounded-3xl border border-cyan-400/30">META ADS EXPERTS</span>
+                        <h2 class="text-6xl font-bold heading-font mt-6 leading-none">What are Meta Ads and why do they work?</h2>
+                        <p class="text-xl text-gray-400 mt-8 max-w-md">
+                            Facebook & Instagram Ads let you reach your exact customer at the right moment with precision targeting, beautiful creatives, and full-funnel optimization.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="md:col-span-7 grid sm:grid-cols-2 gap-8">
+                    <div class="glass border border-cyan-400/30 rounded-3xl p-10 card-hover">
+                        <div class="text-6xl mb-6">🎯</div>
+                        <h3 class="text-3xl font-semibold heading-font">Hyper-Targeted Audience</h3>
+                        <p class="mt-6 text-gray-400">Reach people by age, location, interests, behaviors, lookalike audiences & retargeting. Your ad shows only to buyers who are ready.</p>
+                    </div>
+                    
+                    <div class="glass border border-cyan-400/30 rounded-3xl p-10 card-hover">
+                        <div class="text-6xl mb-6">📸</div>
+                        <h3 class="text-3xl font-semibold heading-font">Facebook + Instagram</h3>
+                        <p class="mt-6 text-gray-400">One campaign runs seamlessly across Feed, Stories, Reels, Messenger & Audience Network. Maximum reach with minimum effort.</p>
+                    </div>
+                    
+                    <div class="glass border border-cyan-400/30 rounded-3xl p-10 card-hover">
+                        <div class="text-6xl mb-6">📞</div>
+                        <h3 class="text-3xl font-semibold heading-font">Lead Generation</h3>
+                        <p class="mt-6 text-gray-400">Instant forms, WhatsApp click-to-chat, website conversions, call buttons — we turn scrollers into paying customers.</p>
+                    </div>
+                    
+                    <div class="glass border border-cyan-400/30 rounded-3xl p-10 card-hover">
+                        <div class="text-6xl mb-6">📊</div>
+                        <h3 class="text-3xl font-semibold heading-font">Conversion Optimization</h3>
+                        <p class="mt-6 text-gray-400">Daily creative testing, A/B splits, pixel perfection, automated rules & scaling. We never stop improving your ROI.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MONTHLY ADS PLANS -->
+    <section id="plans" class="py-28 bg-black relative">
+        <div class="max-w-screen-2xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-pink-400 text-sm font-semibold tracking-widest">MONTHLY RETAINER</span>
+                <h2 class="text-6xl heading-font font-bold mt-4">Choose Your Growth Plan</h2>
+                <p class="text-xl text-gray-400 mt-4">All plans include ad spend management, creative production & expert strategy. Ad budget paid separately to Meta.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Starter -->
+                <div class="glass border border-white/10 rounded-3xl p-10 card-hover flex flex-col">
+                    <div class="text-sm font-semibold text-violet-400">STARTER</div>
+                    <div class="mt-2 text-6xl font-bold heading-font">₹4,999</div>
+                    <div class="text-gray-400 text-sm">per month</div>
+                    
+                    <ul class="mt-12 space-y-6 flex-1">
+                        <li class="flex gap-3"><i class="fas fa-check text-emerald-400 mt-1"></i> Complete ad account setup</li>
+                        <li class="flex gap-3"><i class="fas fa-check text-emerald-400 mt-1"></i> Precise audience targeting</li>
+                        <li class="flex gap-3"><i class="fas fa-check text-emerald-400 mt-1"></i> 3 high-converting creatives</li>
+                        <li class="flex gap-3"><i class="fas fa-check text-emerald-400 mt-1"></i> Basic daily optimization</li>
+                        <li class="flex gap-3"><i class="fas fa-check text-emerald-400 mt-1"></i> Monthly performance report</li>
+                    </ul>
+                    
+                    <a href="https://wa.me/919876543210?text=Hi%2C%20I%20want%20the%20Starter%20Plan" target="_blank"
+                       class="mt-16 block text-center bg-white text-black font-semibold py-5 rounded-2xl hover:bg-gray-100 transition-all neon-button">
+                        Start Now - ₹4,999/mo
+                    </a>
+                </div>
+                
+                <!-- Business (Popular) -->
+                <div class="relative glass border-2 border-cyan-400 rounded-3xl p-10 card-hover flex flex-col scale-110 z-10 shadow-[0_0_80px_#22d3ee]">
+                    <div class="absolute -top-4 right-8 bg-gradient-to-r from-cyan-400 to-violet-500 text-white text-xs font-bold px-8 py-1 rounded-b-3xl">MOST POPULAR</div>
+                    
+                    <div class="text-sm font-semibold text-pink-400">BUSINESS</div>
+                    <div class="mt-2 text-6xl font-bold heading-font">₹9,999</div>
+                    <div class="text-gray-300 text-sm">per month</div>
+                    
+                    <ul class="mt-12 space-y-6 flex-1">
+                        <li class="flex gap-3"><i class="fas fa-check text-emerald-400 mt-1"></i> Advanced lookalike & retargeting</li>
+                        <li class="flex gap-3"><i class="fas fa-check text-emerald-400 mt-1"></i> 6 premium ad creatives</li>
+                        <li class="flex gap-3"><i class="fas fa-check text-emerald-400 mt-1"></i> Weekly optimization calls</li>
+                        <li class="flex gap-3"><i class="fas fa-check text-emerald-400 mt-1"></i> Lead form + WhatsApp integration</li>
+                        <li class="flex gap-3"><i class="fas fa-check text-emerald-400 mt-1"></i> Full funnel tracking</li>
+                    </ul>
+                    
+                    <a href="https://wa.me/919876543210?text=Hi%2C%20I%20want%20the%20Business%20Plan" target="_blank"
+                       class="mt-16 block text-center bg-gradient-to-r from-cyan-400 to-pink-500 font-semibold py-5 rounded-2xl hover:brightness-110 transition-all neon-button">
+                        Start Now - ₹9,999/mo
+                    </a>
+                </div>
+                
+                <!-- Pro Growth -->
+                <div class="glass border border-white/10 rounded-3xl p-10 card-hover flex flex-col">
+                    <div class="text-sm font-semibold text-cyan-400">PRO GROWTH</div>
+                    <div class="mt-2 text-6xl font-bold heading-font">₹19,999</div>
+                    <div class="text-gray-400 text-sm">per month</div>
+                    
+                    <ul class="mt-12 space-y-6 flex-1">
+                        <li class="flex gap-3"><i class="fas fa-check text-emerald-400 mt-1"></i> Complete full-funnel strategy</li>
+                        <li class="flex gap-3"><i class="fas fa-check text-emerald-400 mt-1"></i> Unlimited creatives & Reels</li>
+                        <li class="flex gap-3"><i class="fas fa-check text-emerald-400 mt-1"></i> Daily optimization + scaling</li>
+                        <li class="flex gap-3"><i class="fas fa-check text-emerald-400 mt-1"></i> Meta Pixel + advanced tracking</li>
+                        <li class="flex gap-3"><i class="fas fa-check text-emerald-400 mt-1"></i> Dedicated account manager</li>
+                    </ul>
+                    
+                    <a href="https://wa.me/919876543210?text=Hi%2C%20I%20want%20the%20Pro%20Growth%20Plan" target="_blank"
+                       class="mt-16 block text-center bg-white text-black font-semibold py-5 rounded-2xl hover:bg-gray-100 transition-all neon-button">
+                        Start Now - ₹19,999/mo
+                    </a>
+                </div>
+            </div>
+            
+            <div class="text-center text-xs text-gray-500 mt-12">
+                * Ad spend is separate and managed directly through your Meta Business Manager. Minimum recommended ad spend: ₹25,000/month
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section id="why-us" class="py-28 bg-[#050505]">
+        <div class="max-w-screen-2xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl heading-font font-bold gradient-text">Why Smart Businesses Choose MetaGrowth</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-5 gap-8">
+                <div class="glass p-8 rounded-3xl text-center card-hover border border-violet-400/30">
+                    <div class="mx-auto w-20 h-20 bg-gradient-to-br from-violet-500 to-fuchsia-500 rounded-3xl flex items-center justify-center text-4xl mb-6">🧠</div>
+                    <h4 class="font-semibold text-xl">Certified Meta Ads Experts</h4>
+                    <p class="text-sm text-gray-400 mt-3">Facebook Blueprint & Meta Partner certified team with 7+ years experience</p>
+                </div>
+                <div class="glass p-8 rounded-3xl text-center card-hover border border-pink-400/30">
+                    <div class="mx-auto w-20 h-20 bg-gradient-to-br from-pink-500 to-rose-500 rounded-3xl flex items-center justify-center text-4xl mb-6">📈</div>
+                    <h4 class="font-semibold text-xl">Average 4.8x ROI</h4>
+                    <p class="text-sm text-gray-400 mt-3">Proven across 500+ campaigns in e-commerce, education, real estate & services</p>
+                </div>
+                <div class="glass p-8 rounded-3xl text-center card-hover border border-cyan-400/30">
+                    <div class="mx-auto w-20 h-20 bg-gradient-to-br from-cyan-500 to-teal-500 rounded-3xl flex items-center justify-center text-4xl mb-6">📊</div>
+                    <h4 class="font-semibold text-xl">100% Data-Driven</h4>
+                    <p class="text-sm text-gray-400 mt-3">Weekly reports, creative heatmaps, attribution modeling & custom dashboards</p>
+                </div>
+                <div class="glass p-8 rounded-3xl text-center card-hover border border-amber-400/30">
+                    <div class="mx-auto w-20 h-20 bg-gradient-to-br from-amber-500 to-orange-500 rounded-3xl flex items-center justify-center text-4xl mb-6">⚡</div>
+                    <h4 class="font-semibold text-xl">Same-Day Support</h4>
+                    <p class="text-sm text-gray-400 mt-3">Response within 2 hours on WhatsApp. No ticket queues ever.</p>
+                </div>
+                <div class="glass p-8 rounded-3xl text-center card-hover border border-emerald-400/30">
+                    <div class="mx-auto w-20 h-20 bg-gradient-to-br from-emerald-500 to-lime-500 rounded-3xl flex items-center justify-center text-4xl mb-6">🏆</div>
+                    <h4 class="font-semibold text-xl">Proven Track Record</h4>
+                    <p class="text-sm text-gray-400 mt-3">100+ five-star Google reviews. Clients stay with us for 18+ months on average.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESULTS / STATS -->
+    <section id="results" class="py-28 bg-black">
+        <div class="max-w-screen-2xl mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass border border-white/10 rounded-3xl p-12 text-center card-hover">
+                    <div id="stat1" class="text-7xl font-bold heading-font text-violet-400 stat-number">500</div>
+                    <div class="text-2xl mt-2">Campaigns Managed</div>
+                    <div class="text-sm text-gray-400 mt-8">Across India & Global markets</div>
+                </div>
+                <div class="glass border border-white/10 rounded-3xl p-12 text-center card-hover">
+                    <div id="stat2" class="text-7xl font-bold heading-font text-pink-400 stat-number">10</div>
+                    <div class="text-2xl mt-2">Million+ Ad Reach</div>
+                    <div class="text-sm text-gray-400 mt-8">Impressions delivered in 2025</div>
+                </div>
+                <div class="glass border border-white/10 rounded-3xl p-12 text-center card-hover">
+                    <div id="stat3" class="text-7xl font-bold heading-font text-cyan-400 stat-number">142</div>
+                    <div class="text-2xl mt-2">Happy Clients</div>
+                    <div class="text-sm text-gray-400 mt-8">85% retention rate</div>
+                </div>
+            </div>
+            
+            <!-- Testimonial strip -->
+            <div class="mt-20 text-center text-sm italic text-gray-400">
+                “MetaGrowth turned our ₹3 lakh monthly ad spend into ₹28 lakh revenue in just 47 days. Best decision we ever made for our coaching business.”
+                <span class="block mt-4 text-white font-medium">— Rahul Sharma, Founder, SkillUp Academy</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-28 bg-gradient-to-b from-black to-[#050505]">
+        <div class="max-w-screen-2xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-20">
+                <div>
+                    <h2 class="text-6xl heading-font font-bold">Ready to scale with Meta Ads?</h2>
+                    <p class="mt-6 text-xl text-gray-300">Fill the form or message us on WhatsApp. Our team replies within minutes during business hours.</p>
+                    
+                    <div class="mt-16">
+                        <a href="https://wa.me/919876543210?text=Hi%20MetaGrowth%20Team%2C%20I%27m%20interested%20in%20running%20Facebook%20and%20Instagram%20ads%20for%20my%20business!"
+                           target="_blank"
+                           class="whatsapp-float inline-flex items-center gap-6 bg-[#25D366] hover:bg-[#128C7E] px-10 py-6 rounded-3xl text-black text-xl font-semibold transition-all neon-button">
+                            <i class="fab fa-whatsapp text-5xl"></i>
+                            <div>
+                                <div class="text-sm opacity-70">Instant reply guaranteed</div>
+                                <div>Chat on WhatsApp for Ads Setup</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <form class="space-y-8" action="https://formsubmit.co/your-email@example.com" method="POST">
+                    <div class="grid grid-cols-2 gap-6">
+                        <input type="text" name="name" placeholder="Your Name" required
+                               class="glass border border-white/10 focus:border-cyan-400 rounded-2xl px-8 py-6 text-lg outline-none transition-all">
+                        <input type="tel" name="phone" placeholder="Phone Number" required
+                               class="glass border border-white/10 focus:border-cyan-400 rounded-2xl px-8 py-6 text-lg outline-none transition-all">
+                    </div>
+                    
+                    <input type="text" name="business" placeholder="Business Type / Website" required
+                           class="w-full glass border border-white/10 focus:border-cyan-400 rounded-2xl px-8 py-6 text-lg outline-none transition-all">
+                    
+                    <textarea name="message" rows="5" placeholder="Tell us about your goals (leads, sales, brand awareness...)" required
+                              class="w-full glass border border-white/10 focus:border-cyan-400 rounded-2xl px-8 py-6 text-lg outline-none transition-all resize-none"></textarea>
+                    
+                    <button type="submit"
+                            class="neon-button w-full bg-white text-black font-semibold py-7 rounded-3xl text-xl hover:scale-[1.02] transition-all">
+                        Send Message → We'll reply on WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black border-t border-white/10 py-20">
+        <div class="max-w-screen-2xl mx-auto px-6 grid md:grid-cols-12 gap-y-16">
+            <div class="md:col-span-5">
+                <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 bg-gradient-to-br from-violet-500 via-cyan-400 to-pink-500 rounded-2xl flex items-center justify-center text-2xl font-black heading-font shadow-[0_0_25px_#a855f7]">MG</div>
+                    <span class="text-3xl font-bold tracking-tighter heading-font gradient-text">MetaGrowth</span>
+                </div>
+                <p class="mt-6 text-gray-400 max-w-xs">
+                    Professional Meta Ads Management Agency<br>
+                    Delhi • Mumbai • Bangalore • Jaipur
+                </p>
+                
+                <div class="mt-16">
+                    <a href="https://wa.me/919876543210" target="_blank"
+                       class="inline-flex items-center gap-3 text-emerald-400 hover:text-emerald-300 text-lg">
+                        <i class="fab fa-whatsapp text-3xl"></i>
+                        <span class="font-medium">+91 98765 43210</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="md:col-span-2">
+                <div class="uppercase text-xs tracking-widest text-gray-500 mb-8">Company</div>
+                <div class="space-y-4 font-medium">
+                    <a href="#services" class="block hover:text-cyan-400">Services</a>
+                    <a href="#plans" class="block hover:text-cyan-400">Pricing</a>
+                    <a href="#why-us" class="block hover:text-cyan-400">Why Us</a>
+                </div>
+            </div>
+            
+            <div class="md:col-span-2">
+                <div class="uppercase text-xs tracking-widest text-gray-500 mb-8">Resources</div>
+                <div class="space-y-4 font-medium">
+                    <a href="#" class="block hover:text-cyan-400">Case Studies</a>
+                    <a href="#" class="block hover:text-cyan-400">Blog</a>
+                    <a href="#" class="block hover:text-cyan-400">Free Audit</a>
+                </div>
+            </div>
+            
+            <div class="md:col-span-3">
+                <div class="uppercase text-xs tracking-widest text-gray-500 mb-8">Get in touch</div>
+                <div class="text-2xl font-light">hello@metagrowth.in</div>
+                
+                <div class="mt-12">
+                    <button onclick="window.scrollTo({top:0,behavior:'smooth'})"
+                            class="text-sm flex items-center gap-2 text-gray-400 hover:text-white">
+                        <span class="uppercase tracking-widest">Back to top</span>
+                        <i class="fas fa-arrow-up"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="max-w-screen-2xl mx-auto px-6 mt-20 pt-10 border-t border-white/10 text-xs text-gray-500 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div>© 2026 MetaGrowth Digital Pvt Ltd. All rights reserved.</div>
+            <div class="flex gap-8">
+                <a href="#" class="hover:text-white">Privacy</a>
+                <a href="#" class="hover:text-white">Terms</a>
+                <a href="#" class="hover:text-white">Meta Partner</a>
+            </div>
+            <div>Made with ❤️ for Indian businesses</div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919876543210?text=Hi%20MetaGrowth%2C%20I%20need%20help%20with%20Meta%20Ads!" target="_blank"
+       class="fixed bottom-8 right-8 z-50 bg-[#25D366] w-16 h-16 rounded-3xl flex items-center justify-center text-4xl shadow-2xl whatsapp-float hover:scale-110 transition-all">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        function animateValue(id, start, end, duration) {
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                const value = Math.floor(progress * (end - start) + start);
+                document.getElementById(id).innerHTML = value + (id === 'stat2' ? 'M+' : '+');
+                if (progress < 1) window.requestAnimationFrame(step);
+                else document.getElementById(id).innerHTML = end + (id === 'stat2' ? 'M+' : '+');
+            };
+            window.requestAnimationFrame(step);
+        }
+        
+        let statsAnimated = false;
+        window.addEventListener('scroll', () => {
+            if (!statsAnimated && window.scrollY > 1800) {
+                statsAnimated = true;
+                animateValue("stat1", 0, 500, 1800);
+                animateValue("stat2", 0, 10, 1800);
+                animateValue("stat3", 0, 142, 1800);
+            }
+        });
+        
+        document.querySelector('form').addEventListener('submit', function(e) {
+            setTimeout(() => {
+                alert("✅ Thank you! Our team will message you on WhatsApp within 10 minutes.");
+            }, 800);
+        });
+        
+        console.log('%c✅ MetaGrowth - Advanced Neon Edition Loaded 🔥', 'color:#22d3ee; font-size:16px; font-family:monospace');
+    </script>
+</body>
+</html>
